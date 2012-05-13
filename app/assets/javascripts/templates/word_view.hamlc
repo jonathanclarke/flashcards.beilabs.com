@@ -1,0 +1,12 @@
+%h1 Word at #{@location}
+.discoball
+.stage
+    .band
+        %h3 The Band
+        .instrument Drums
+        .instrument Guitar
+        .instrument Guitar
+.floor
+    %h3 The Crowd
+    -for dancer in @dancers
+        .dancer{class:dancer.gender}= dancer.name
